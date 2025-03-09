@@ -25,13 +25,10 @@ def iter_shape(data_dict):
 
 
 def get_ds_typing(ds, idx=0):
-    return_dict = {"length": None, "typing": None}
-
-    return_dict["length"] = len(ds)
-    return_dict["typing"] = None
-
-    return
+    return_dict = {"length": len(ds), "typing": iter_typing(ds[idx])}
+    return return_dict
 
 
 def get_ds_shape(ds, idx=0):
-    return_dict = {"length": None, "shape": None}
+    return_dict = {"length": len(ds), "shape": iter_shape(ds[idx])}
+    return return_dict
