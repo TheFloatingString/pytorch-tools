@@ -9,6 +9,7 @@ def iter_typing(data_dict):
             return_dict[key_] = type(value_)
     return return_dict
 
+
 def iter_shape(data_dict):
     return_dict = {}
     for key_ in data_dict:
@@ -24,14 +25,13 @@ def iter_shape(data_dict):
 
 
 def get_ds_typing(ds, idx=0):
-    return_dict = {"length":None,
-                   "typing":None}
+    return_dict = {"length": None, "typing": None}
 
     return_dict["length"] = len(ds)
-    return_dict["typing"] = None    
+    return_dict["typing"] = None
 
     return
 
+
 def get_ds_shape(ds, idx=0):
-    return_dict = {"length": None,
-                   "shape": None}
+    return_dict = {"length": None, "shape": None}

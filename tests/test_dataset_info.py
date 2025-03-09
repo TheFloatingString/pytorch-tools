@@ -6,13 +6,10 @@ def test_ds_info():
     class SampleDS(torch.utils.data.Dataset):
         def __init__(self):
             self.data_dict = [
-                    {"data":np.zeros(3),
-                     "label":0},
-                    {"data":np.zeros(3),
-                     "label":0},
-                    {"data":np.zeros(3),
-                     "label":1}
-                    ]
+                {"data": np.zeros(3), "label": 0},
+                {"data": np.zeros(3), "label": 0},
+                {"data": np.zeros(3), "label": 1},
+            ]
 
         def __len__(self):
             return len(self.data_dict)
@@ -22,4 +19,3 @@ def test_ds_info():
 
     sample_ds = SampleDS()
     resp = get_ds_info(sample_ds)
-
