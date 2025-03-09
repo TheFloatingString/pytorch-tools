@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { email = "tmp@tmp.xio" }
 ]
-requires-python = ">=3.11"
+requires-python = ">=3.9"
 dependencies = [
     "numpy>=2.2.3",
     "pytest>=8.3.5",
